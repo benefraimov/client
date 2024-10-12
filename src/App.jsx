@@ -5,7 +5,7 @@ function App() {
   const [server, setServer] = useState("");
   const checkApi = async () => {
     try {
-      const data = await fetch("http://13.60.170.126/");
+      const data = await fetch("https://server.spacode.site");
       const result = await data.json();
       setServer(result.name);
     } catch (error) {
